@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    display: grid;
+    /* JSで定義するボードサイズに合わせて調整されます */
+    border: 3px solid #333;
+    background-color: #000;
+}
+
+/* ブロックのスタイル */
+.block {
+    width: 25px; /* 1マスあたりのサイズ */
+    height: 25px;
+    border: 1px solid #111;
+    box-sizing: border-box;
+}
+
+/* ミノごとの色 */
+.I { background-color: cyan; }
+.O { background-color: yellow; }
+.T { background-color: purple; }
+.J { background-color: blue; }
+.L { background-color: orange; }
+.S { background-color: green; }
+.Z { background-color: red; }
+
+.hidden {
+    display: none;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+    border-radius: 5px;
+}
